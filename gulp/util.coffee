@@ -1,8 +1,8 @@
-$ = require('gulp-load-plugins')()
+beeper = require('beeper')
 
 
 onError = (err) ->
-  $.util.beep()
+  beeper()
   console.log err
   this.emit 'end'
 

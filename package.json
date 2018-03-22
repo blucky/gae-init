@@ -3,6 +3,7 @@
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-preset-env": "1.6.1",
+    "beeper": "1.1.1",
     "bower": "1.8.2",
     "browser-sync": "2.23.6",
     "coffeescript": "2.2.3",
@@ -27,7 +28,6 @@
     "gulp-sourcemaps": "2.6.4",
     "gulp-start": "1.0.1",
     "gulp-uglify-es": "1.0.1",
-    "gulp-util": "3.0.8",
     "gulp-watch": "5.0.0",
     "gulp-zip": "4.1.0",
     "husky": "0.14.3",
