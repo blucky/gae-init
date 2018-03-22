@@ -4,6 +4,7 @@
 .git*
 .hg*
 .idea
+yarn.lock
 bower_components
 main/index.yaml
 main/lib
