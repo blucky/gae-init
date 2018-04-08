@@ -20,7 +20,7 @@ Make sure you have all of the above or refer to the docs on how to [install the 
 
 ```bash
 $ cd /path/to/project-name
-$ gulp
+$ yarn start
 ```
 
 To test it visit `http://localhost:3000` in your browser.
@@ -30,40 +30,32 @@ To test it visit `http://localhost:3000` in your browser.
 For a complete list of commands:
 
 ```bash
-$ gulp help
+$ yarn start help
 ```
 
 ## Initializing or Resetting the project
 
 ```bash
 $ cd /path/to/project-name
-$ npm install
-$ gulp
+$ yarn
+$ yarn start
 ```
 
 If something goes wrong you can always do:
 
 ```bash
-$ gulp reset
-$ npm install
-$ gulp
-```
-
----
-
-To install [Gulp][] as a global package:
-
-```bash
-$ npm install -g gulp
+$ yarn start reset
+$ yarn
+$ yarn start
 ```
 
 ## Deploying on Google App Engine
 
 ```bash
-$ gulp deploy
-$ gulp deploy --project=foo
-$ gulp deploy --project=foo --version=bar
-$ gulp deploy --project=foo --version=bar --no-promote
+$ yarn start deploy
+$ yarn start deploy --project=foo
+$ yarn start deploy --project=foo --version=bar
+$ yarn start deploy --project=foo --version=bar --no-promote
 ```
 
 ## Tech Stack
@@ -75,10 +67,9 @@ $ gulp deploy --project=foo --version=bar --no-promote
 * [jQuery][], [Moment.js][]
 * [OpenID][] sign in (Google, Facebook, Twitter and more)
 * [Python 2.7][], [pip][], [virtualenv][]
-* [Gulp][], [Bower][]
+* [Gulp][]
 
 [bootstrap]: http://getbootstrap.com/
-[bower]: http://bower.io/
 [coffeescript]: http://coffeescript.org/
 [documentation]: http://docs.gae-init.appspot.com
 [feature list]: http://docs.gae-init.appspot.com/features/
