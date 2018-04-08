@@ -17,7 +17,7 @@ gulp.task 'browser-sync', false, ->
 
 
 gulp.task 'ext_watch_rebuild', false, (callback) ->
-  $.sequence('clean:dev', 'copy_bower_files', 'ext:dev', 'style:dev') callback
+  $.sequence('clean:dev', 'copy_files', 'ext:dev', 'style:dev') callback
 
 
 gulp.task 'watch', false, ->
@@ -25,8 +25,6 @@ gulp.task 'watch', false, ->
     $.sequence('pip')()
   $.watch 'package.json', ->
     $.sequence('npm')()
-  $.watch 'bower.json', ->
-    $.sequence('ext_watch_rebuild')()
   $.watch 'gulp/config.coffee', ->
     $.sequence('ext:dev', ['style:dev', 'script:dev'])()
   $.watch paths.static.ext, ->
